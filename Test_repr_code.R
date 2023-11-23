@@ -44,7 +44,7 @@ B2<-as.vector(t(Y))
 library(xgboost) #Loading XGB library
 bst<-xgb.load("FSTI-XGB_1619") #Loading our AqSolDB-N model
 
-pred_y<-predict(bst,F) # if it does not work then colnames(Xb_Ge)<-
+pred_y<-predict(bst,F) #
 
 library(caret) # Loading caret library
 caret::RMSE(B2,pred_y)
